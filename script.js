@@ -78,19 +78,16 @@
 //         // }
 //     if(arr[i]==arr[j]){
 //         arr.splice(j);
-//     }  
+//     }
 //     }
 //     //  if(!isDuplicate){
 //     //      result.push(arr[i]);
 //     //  }
-  
+
 // }
 //   console.log(arr);
 // }
 // removeDuplicate([1, 2, 3,7,4,1, 4, 2]);
-
-
-
 
 // function smallestNumber(arr){
 //   let smallest = arr[0];
@@ -103,17 +100,11 @@
 // }
 // smallestNumber([1,2,3,5,6,7]);
 
-
-
-
-
-
 // var x = 10;
 // {
 //   var x = 20;
 // }
 // console.log(x);
-
 
 // let x = 10;
 // let obj = {
@@ -127,7 +118,6 @@
 
 // obj.getX();
 
-
 // console.log([]+[]);
 // console.log({}+[]);
 // console.log({}+{});
@@ -135,11 +125,8 @@
 // console.log(0&&'hello');
 // console.log('hello'&&0)
 
-
 // console.log(0||'hello');
 // console.log('hello'||0)
-
-
 
 // let arr = [0,,0,2,1,2,0,4];
 // let newarr = arr.filter((val)=>val!=0)
@@ -147,9 +134,6 @@
 //   newarr.push(0);
 // }
 // console.log(newarr);
-
-
-
 
 // let str = 'aabbcchddd';
 // let result = {};
@@ -162,9 +146,7 @@
 // }
 // console.log(result);
 
-
-
-// chunk with the size in array 
+// chunk with the size in array
 
 // let arr = [1,2,3,4,5];
 // let size = 3;
@@ -180,7 +162,7 @@
 //     }else{
 //       inside.push(arr[j]);
 //       count++;
-      
+
 //     }
 //   }
 //   ans.push(inside);
@@ -199,18 +181,13 @@
 // const fn = obj.greet();
 // console.log(fn);
 
-
-
 // console.log(a);
 // var a = 10;
 
 // console.log(b);
 // let b = 20;
 
-
 // console.log(null == undefined);
-
-
 
 // const arr = [1, 2, 3];
 
@@ -228,8 +205,6 @@
 
 // obj.show();
 
-
-
 // let str = 'lokesh';
 
 // for(let i = 0;i<str.length;i++){
@@ -244,8 +219,6 @@
 //   return
 // }
 // }
-
-
 
 // let str = 'aaksdjiwkeior';
 // let newString = '';
@@ -263,6 +236,55 @@
 // }
 // console.log(newString);
 
+// let str = "ahabbccdde";
+// let stringarr = str.split("");
+// let arr = stringarr.reduce((acc, curr) => {
+//   acc[curr] ? (acc[curr] += 1) : (acc[curr] = 1);
+//   return acc;
+// }, {});
+
+// for (let i = 0; i < stringarr.length; i++) {
+//   if (arr[stringarr[i]] == 1) {
+//     console.log(stringarr[i]);
+//     break;
+//   }
+// }
 
 
-let sr
+
+// let str = "ahabbccdde";
+// let stringarr = str.split("");
+// for(let i =0;i<stringarr.length;i++){
+//   for(let j =i+1;j<stringarr.length;j++){
+//     if(stringarr[i]==stringarr[j]){
+//       stringarr.splice(j,1);
+//     }
+//   }
+// }
+// console.log(stringarr.join(''));
+
+
+// let str = 'i love js';
+// let arr = str.split(' ');
+// for(let i =0;i<arr.length;i++){
+// arr [i] = arr[i][0].toLocaleUpperCase()+arr[i].slice(1);
+// }
+// let result = arr.join(' ');
+// console.log(result)
+
+
+
+
+//  let arr = [1,2,3,5,6,6,4,32,1];
+
+
+//  for(let  i = 0;i<arr.length;i++){
+//     for(let j = i+1;j<arr.length;j++){
+//         if(arr[i]==arr[j]){
+// arr.splice(j,1);
+//         }
+//     }
+//  }
+//  console.log(arr);
+
+

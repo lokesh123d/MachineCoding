@@ -1,0 +1,13 @@
+.loadingContainer{
+  width:80vw;
+  height: 4px;
+  background-color: gray;
+  margin: 20px auto;
+
+}
+.loading-bar{
+  /* width: 80%; */
+  height:100%
+  ;
+  background-color: blue;
+}
