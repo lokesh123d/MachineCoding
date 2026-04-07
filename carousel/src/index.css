@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.scrollBarContainer {
+  background-color: lightcyan;
+  display: flex;
+  height: 200px;
+  overflow-x: scroll;
+  gap: 10px;
+  scrollbar-width: none;
+  padding: 10px;
+  border-left: 20px solid lightgreen;
+  border-right: 20px solid lightgreen;
+  border-top: 2px solid lightgreen;
+  border-bottom: 2px solid lightgreen;
+}
+
+.postContainer {
+  /* width: 200px; */
+  text-align: center;
+  background-color: lightgray;
+  min-width: 90vw;
+
+}

@@ -1,0 +1,31 @@
+.star-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+}
+
+.star-base {
+  color: #ddd; /* background/unfilled color */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.star-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0%; /* dynamically set from props */
+  color: rgb(249, 229, 5); /* filled color */
+}
+
+.inptuContainer{
+    padding: 30px;
+    display: flex;
+    height: 20px;
+    width: 70vw;
+    gap:10px
+    
+}
