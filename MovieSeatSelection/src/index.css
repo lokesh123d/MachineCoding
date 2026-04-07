@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.seatContainer{
+  background-color: lightgray;
+  display: grid;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.seatWrapper {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 12px;
+}
+
+.seat {
+  border: 1px solid #c3c3c3;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 10px 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.showBtn{
+  /* background-color: red; */
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  /* border-radius: 50%; */
+}
+.iconandheading{
+display: flex;
+/* justify-content: center; */
+gap: 10px
+;
+align-items: center;
+}
+.bookBtn{
+  background-color: rgb(191, 153, 78);
+  border: none;
+  padding: 10px;
+  margin: 20px;
+  cursor: pointer;
+}
