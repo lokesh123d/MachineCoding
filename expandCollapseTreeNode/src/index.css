@@ -1,0 +1,53 @@
+.fileContainer{
+  font-size: 8px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.folder {
+  background-color: rgba(211, 211, 211, 0.237);
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0px 5px;
+  font-size: 10px;
+  border: 0.1px solid black;
+  border-radius: 1px;
+  align-items: center;
+}
+input{
+  font-size: 7px;
+  height: 5px;
+  outline: none;
+  width: 100px;
+  
+}
+
+.file {
+  background-color: rgba(211, 211, 211, 0.237);
+  border: 0.01px solid black;
+  border-radius: 1px;
+  width: 150px;
+  margin-left: 3%;
+  padding: 0px 5px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 10px;
+}
+.expand-icon{
+  cursor: pointer;
+}
+.iconsSild{
+  display: flex;
+  gap: 10px
+  ;
+}
+.icons{
+  cursor: pointer;
+  font-size: 7px;
+}
+.fileName{
+  display: flex;
+}

@@ -516,3 +516,29 @@ function longestIncreasingArray(arr) {
 
 
 
+
+function rightShift(arr,k){
+let result =[];
+for(let i = 0;i<arr.length;i++){
+let newIndex = (i+k)%arr.length;
+result[newIndex] = arr[i];
+}
+return result
+
+
+}
+// console.log(rightShift([5,6,10,100,120],2))
+
+
+
+// function leftShift(arr,k){
+// let result =[];
+// for(let i = 0;i<arr.length;i++){
+// let newIndex =k%arr.length;  
+// result[newIndex] = arr[i];
+// }
+// return result
+
+
+// }
+// console.log(leftShift([5,6,10,100,120],1))
