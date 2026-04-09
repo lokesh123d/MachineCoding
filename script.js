@@ -514,31 +514,54 @@ function longestIncreasingArray(arr) {
 }
 // console.log(longestIncreasingArray([1, 2, 2, 3, 4, 1, 2]));
 
-
-
-
-function rightShift(arr,k){
-let result =[];
-for(let i = 0;i<arr.length;i++){
-let newIndex = (i+k)%arr.length;
-result[newIndex] = arr[i];
-}
-return result
-
-
+function rightShift(arr, k) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    let newIndex = (i + k) % arr.length;
+    result[newIndex] = arr[i];
+  }
+  return result;
 }
 // console.log(rightShift([5,6,10,100,120],2))
-
-
 
 // function leftShift(arr,k){
 // let result =[];
 // for(let i = 0;i<arr.length;i++){
-// let newIndex =k%arr.length;  
+// let newIndex =k%arr.length;
 // result[newIndex] = arr[i];
 // }
 // return result
 
-
 // }
 // console.log(leftShift([5,6,10,100,120],1))
+
+// let obj = {
+//   name: "lokesh",
+//   getName(...rest) {
+//     console.log(rest    );
+//   },
+// };
+
+// obj.getName.apply(obj,['web developer','kldfjlk']);
+
+function debounce(func, delay) {
+  let timer;
+  return function () {
+    timer = setTimeout(() => {
+      func();
+    }, delay);
+  };
+}
+
+
+// const debounceFunc = 
+
+function doSomething(){
+  console.log('do something');
+}
+
+const debounceFunc = debounce(() => console.log("Hello"), 1000);
+
+for (let i = 0; i < 5; i++) {
+  debounceFunc(); // "Hello" logs once, 1 second after last call
+}

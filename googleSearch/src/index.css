@@ -1,0 +1,23 @@
+.result-container {
+  width: 400px;
+  padding: 11px;
+  max-height: 400px;
+  overflow-y: scroll;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.result {
+  padding: 2px;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.result:hover {
+  background-color: bisque;
+}
+
+input {
+  width: 400px;
+  padding: 10px;
+}
