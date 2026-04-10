@@ -1,0 +1,174 @@
+[
+  {
+    "id": 1,
+    "name": "Root_Project",
+    "checked": false,
+    "children": [
+      {
+        "id": 2,
+        "name": "src",
+        "checked": false,
+        "children": [
+          {
+            "id": 3,
+            "name": "components",
+            "checked": false,
+            "children": [
+              {
+                "id": 4,
+                "name": "Header.jsx",
+                "checked": false,
+                "children": []
+              },
+              {
+                "id": 5,
+                "name": "Sidebar.jsx",
+                "checked": true,
+                "children": []
+              },
+              {
+                "id": 6,
+                "name": "Footer.jsx",
+                "checked": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "name": "pages",
+            "checked": true,
+            "children": [
+              {
+                "id": 8,
+                "name": "Home.jsx",
+                "checked": true,
+                "children": []
+              },
+              {
+                "id": 9,
+                "name": "Dashboard.jsx",
+                "checked": false,
+                "children": []
+              },
+              {
+                "id": 10,
+                "name": "Settings.jsx",
+                "checked": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "name": "utils",
+            "checked": false,
+            "children": [
+              {
+                "id": 12,
+                "name": "helpers.js",
+                "checked": false,
+                "children": []
+              },
+              {
+                "id": 13,
+                "name": "api.js",
+                "checked": true,
+                "children": []
+              },
+              {
+                "id": 14,
+                "name": "constants.js",
+                "checked": false,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "public",
+        "checked": false,
+        "children": [
+          {
+            "id": 16,
+            "name": "index.html",
+            "checked": true,
+            "children": []
+          },
+          {
+            "id": 17,
+            "name": "favicon.ico",
+            "checked": false,
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "assets",
+        "checked": false,
+        "children": [
+          {
+            "id": 19,
+            "name": "images",
+            "checked": false,
+            "children": [
+              {
+                "id": 20,
+                "name": "logo.png",
+                "checked": true,
+                "children": []
+              },
+              {
+                "id": 21,
+                "name": "banner.jpg",
+                "checked": false,
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 22,
+            "name": "styles",
+            "checked": false,
+            "children": [
+              {
+                "id": 23,
+                "name": "main.css",
+                "checked": false,
+                "children": []
+              },
+              {
+                "id": 24,
+                "name": "theme.css",
+                "checked": true,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "name": "config",
+        "checked": false,
+        "children": [
+          {
+            "id": 26,
+            "name": "webpack.config.js",
+            "checked": false,
+            "children": []
+          },
+          {
+            "id": 27,
+            "name": "babel.config.js",
+            "checked": true,
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]

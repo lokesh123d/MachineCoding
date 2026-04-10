@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "name": "Root_Project",
+    "children": [
+      {
+        "id": 2,
+        "name": "src",
+        "children": [
+          {
+            "id": 3,
+            "name": "components",
+            "children": [
+              {
+                "id": 4,
+                "name": "Header.jsx",
+                "children": []
+              },
+              {
+                "id": 5,
+                "name": "Sidebar.jsx",
+                "children": []
+              },
+              {
+                "id": 6,
+                "name": "Footer.jsx",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "name": "pages",
+            "children": [
+              {
+                "id": 8,
+                "name": "Home.jsx",
+                "children": []
+              },
+              {
+                "id": 9,
+                "name": "Dashboard.jsx",
+                "children": []
+              },
+              {
+                "id": 10,
+                "name": "Settings.jsx",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "name": "utils",
+            "children": [
+              {
+                "id": 12,
+                "name": "helpers.js",
+                "children": []
+              },
+              {
+                "id": 13,
+                "name": "api.js",
+                "children": []
+              },
+              {
+                "id": 14,
+                "name": "constants.js",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "name": "public",
+        "children": [
+          {
+            "id": 16,
+            "name": "index.html",
+            "children": []
+          },
+          {
+            "id": 17,
+            "name": "favicon.ico",
+            "children": []
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "name": "assets",
+        "children": [
+          {
+            "id": 19,
+            "name": "images",
+            "children": [
+              {
+                "id": 20,
+                "name": "logo.png",
+                "children": []
+              },
+              {
+                "id": 21,
+                "name": "banner.jpg",
+                "children": []
+              }
+            ]
+          },
+          {
+            "id": 22,
+            "name": "styles",
+            "children": [
+              {
+                "id": 23,
+                "name": "main.css",
+                "children": []
+              },
+              {
+                "id": 24,
+                "name": "theme.css",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "name": "config",
+        "children": [
+          {
+            "id": 26,
+            "name": "webpack.config.js",
+            "children": []
+          },
+          {
+            "id": 27,
+            "name": "babel.config.js",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]
