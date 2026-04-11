@@ -554,14 +554,36 @@ function debounce(func, delay) {
 }
 
 
-// const debounceFunc = 
+// // const debounceFunc = 
 
-function doSomething(){
-  console.log('do something');
-}
+// function doSomething(){
+//   console.log('do something');
+// }
 
-const debounceFunc = debounce(() => console.log("Hello"), 1000);
+// const debounceFunc = debounce(() => console.log("Hello"), 1000);
 
-for (let i = 0; i < 5; i++) {
-  debounceFunc(); // "Hello" logs once, 1 second after last call
-}
+// for (let i = 0; i < 5; i++) {
+//   debounceFunc(); // "Hello" logs once, 1 second after last call
+// }
+
+
+
+
+
+// let obj = {
+//   name:'lokesh',
+//   location:{
+//     lat:345,
+//     lna:34
+//   }
+// }
+
+
+// let obj2 = JSON.parse(JSON.stringify(obj))
+
+// obj2.location.lat = 'lokesh';
+
+
+// console.log(obj);
+
+
