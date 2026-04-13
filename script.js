@@ -553,8 +553,7 @@ function debounce(func, delay) {
   };
 }
 
-
-// // const debounceFunc = 
+// // const debounceFunc =
 
 // function doSomething(){
 //   console.log('do something');
@@ -566,10 +565,6 @@ function debounce(func, delay) {
 //   debounceFunc(); // "Hello" logs once, 1 second after last call
 // }
 
-
-
-
-
 // let obj = {
 //   name:'lokesh',
 //   location:{
@@ -578,12 +573,47 @@ function debounce(func, delay) {
 //   }
 // }
 
-
 // let obj2 = JSON.parse(JSON.stringify(obj))
 
 // obj2.location.lat = 'lokesh';
 
-
 // console.log(obj);
 
+function checkPanagram(str) {
+  str = str.toLowerCase();
+  let asciVal = new Set();
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] >= "a" && str[i] <= "z" && str[i].trim() !== "") {
+      asciVal.add(str[i].charCodeAt());
+    }
+  }
+  if (asciVal.size == 26) {
+    return true;
+  }
+  return false;
+}
 
+// console.log(checkPanagram("qwertyuEOIRiopasjkh`dfghjklzxcvbnmKDJSFLEUROKNV"));
+
+function time12to24(time) {
+  const [fullTime, timeZone] = time.split(" ");
+  let [hour, minute] = fullTime.split(":");
+  if (timeZone == "AM" && hour == "12") return `00:${minute}`;
+  if (timeZone == "AM") return fullTime;
+  if (+hour != 12) hour = +hour + 12;
+  return `${hour}:${minute}`;
+}
+// console.log(time12to24("1:20 PM"));
+
+
+let obj = { count: 0 };
+
+function update(data) {
+  
+  data.count++;
+}
+
+update(obj);
+update(obj);
+
+console.log(obj.count);
