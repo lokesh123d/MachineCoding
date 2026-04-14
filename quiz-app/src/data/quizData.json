@@ -1,0 +1,112 @@
+{
+  "quizId": "quiz_js_2026_001",
+  "title": "Advanced JavaScript & React Quiz",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "q_9f3a1c",
+      "question": "What will be the output of: console.log([] + [])?",
+      "options": ["[]", "undefined", "''", "0"],
+      "correctAnswer": "''",
+      "explanation": "Both arrays are converted to empty strings, resulting in ''.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q_a7b2d9",
+      "question": "What is the output of: typeof NaN?",
+      "options": ["number", "NaN", "undefined", "object"],
+      "correctAnswer": "number",
+      "explanation": "NaN is considered a number type in JavaScript.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_c3e8f1",
+      "question": "Which method is used to stop event bubbling?",
+      "options": [
+        "event.preventDefault()",
+        "event.stopPropagation()",
+        "event.stop()",
+        "event.cancel()"
+      ],
+      "correctAnswer": "event.stopPropagation()",
+      "explanation": "It prevents the event from bubbling up the DOM tree.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q_d4k7m2",
+      "question": "What does useMemo return?",
+      "options": [
+        "A memoized function",
+        "A memoized value",
+        "A component",
+        "A promise"
+      ],
+      "correctAnswer": "A memoized value",
+      "explanation": "useMemo caches the result of a computation.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q_x1p9z5",
+      "question": "What will be the output?\n\nPromise.resolve(1).then(x => x + 1).then(console.log);",
+      "options": ["1", "2", "undefined", "error"],
+      "correctAnswer": "2",
+      "explanation": "The value is passed through the promise chain and incremented.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_l8v3s0",
+      "question": "Which hook is used to persist values across renders without causing re-render?",
+      "options": ["useState", "useRef", "useEffect", "useMemo"],
+      "correctAnswer": "useRef",
+      "explanation": "useRef holds mutable values without triggering re-renders.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q_r2n6t4",
+      "question": "What is the purpose of key in React lists?",
+      "options": [
+        "Styling elements",
+        "Identifying elements uniquely",
+        "Handling events",
+        "Optimizing API calls"
+      ],
+      "correctAnswer": "Identifying elements uniquely",
+      "explanation": "Keys help React identify which items have changed.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "q_u5w8y1",
+      "question": "What will be the output?\n\nconsole.log(0.1 + 0.2 === 0.3)",
+      "options": ["true", "false", "undefined", "error"],
+      "correctAnswer": "false",
+      "explanation": "Floating point precision causes slight inaccuracies.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "q_h7j2q6",
+      "question": "What is lazy loading in React?",
+      "options": [
+        "Loading components only when needed",
+        "Loading everything at once",
+        "Caching API calls",
+        "Using Redux"
+      ],
+      "correctAnswer": "Loading components only when needed",
+      "explanation": "Lazy loading improves performance by splitting bundles.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "q_m4z9b3",
+      "question": "Which lifecycle is replaced by useEffect in functional components?",
+      "options": [
+        "componentDidMount",
+        "componentDidUpdate",
+        "componentWillUnmount",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above",
+      "explanation": "useEffect can handle all these lifecycle phases.",
+      "difficulty": "medium"
+    }
+  ]
+}
