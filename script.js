@@ -605,15 +605,233 @@ function time12to24(time) {
 }
 // console.log(time12to24("1:20 PM"));
 
+// let obj = { count: 0 };
 
-let obj = { count: 0 };
+// function update(data) {
 
-function update(data) {
-  
-  data.count++;
+//   data.count++;
+// }
+
+// update(obj);
+// update(obj);
+
+// console.log(obj.count);
+
+const users = [
+  { name: "A", age: 20 },
+  { name: "B", age: 20 },
+  { name: "C", age: 25 },
+];
+
+function groupKey(obj, key) {
+  let result = {};
+
+  for (let char of obj) {
+    if (result[char[key]]) {
+      result[char[key]].push(char);
+    } else [(result[char[key]] = [char])];
+  }
+
+  return result;
 }
 
-update(obj);
-update(obj);
+// console.log(groupKey(users, "age"));
 
-console.log(obj.count);
+// function throttle(func, delay) {
+//   let lastCall = 0;
+//   return function (...args) {
+//     if (Date.now() - lastCall >= delay) {
+//       lastCall = Date.now();
+//       setInterval(() => {
+//         func(...args);
+//       }, delay);
+//     }
+//   };
+// }
+
+// function debounce(func, delay) {
+//   return function (...args) {
+//     clearTimeout(timer);
+//     let timer = setTimeout(() => {
+//       func(...args);
+//     }, delay);
+//   };
+// }
+
+// lru system
+
+// function LruSystem(name){
+// let listInfoList = [];
+// return {
+//   addUser :function(name){
+// listInfoList.unshift(name);
+// console.log(listInfoList);
+
+// }
+// }
+// }
+// let userData = LruSystem();
+
+// userData.addUser('lokesh2')
+
+function LruSystem() {
+  let listInfoList = ["lokesh"];
+  return function () {
+    return {
+      getList: function () {
+        console.log(listInfoList);
+      },
+      addUser: function (userName) {
+        listInfoList.unshift(userName);
+      },
+      removeUser: function () {
+        listInfoList.pop();
+      },
+    };
+  };
+}
+
+// const val = LruSystem();
+// const userContainer = val();
+
+// userContainer.addUser("dangwal");
+// userContainer.getList();
+// userContainer.removeUser();
+
+function debouce(func, delay) {
+  let timerid;
+  return function (...args) {
+    clearTimeout(timerid);
+    timerid = setTimeout(() => {
+      func(...args);
+    }, delay);
+  };
+}
+
+function throttle(func, delay) {
+  let lastCall = 0;
+  return function (...args) {
+    let now = Date.now();
+    if (now - lastCall >= delay) {
+      func();
+      lastCall = now;
+    }
+  };
+}
+
+function flattenObject(obj) {
+  let result = {};
+
+  for (let key in obj) {
+    if (typeof obj[key] == "object") {
+      result[key] = flattenObject(obj[key]);
+    }
+    console.log(key);
+  }
+
+  return result;
+}
+
+// console.log(
+//   flattenObject({
+//     a: 1,
+//     b: { c: 2, d: { e: 3 } },
+//   }),
+// );
+
+// let obj4 = {
+//   a:{
+//     c:10
+//   },
+
+//   b:3
+// }
+// let result = {};
+// for(let key in obj4){
+// if(typeof obj4[key] == 'object'){
+//   result[key[key]]
+// }
+//   result[key] = obj4[key]
+// }
+// console.log(result);
+
+function compareTwoOjects(obj, obj2) {
+  for (let char in obj) {
+    if (typeof obj[char] == "object" && typeof obj2[char] == "object") {
+      compareTwoOjects(obj[char], obj2[char]);
+    }
+    if (obj[char] != obj2[char]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+// console.log(
+//   compareTwoOjects(
+//     { a: 10, b: 20, c: { d: 30 } },
+//     { a: 10, b: 20, c: { d: 30 } },
+//   ),
+// );
+
+let pr1 = new Promise((res, rej) => {
+  setTimeout(() => {
+    res("First Promise Resolved");
+  }, 1000);
+});
+let pr2 = new Promise((res, rej) => {
+  setTimeout(() => {
+    res("second Promise Resolved");
+  }, 2000);
+});
+let pr3 = new Promise((res, rej) => {
+  setTimeout(() => {
+    res("Third Promise Resolved");
+  }, 3000);
+});
+
+function customePromiseAll(promises) {
+  return new Promise((resolve, reject) => {
+    let result = [];
+    let completed = 1;
+    promises.forEach((pr, index) => {
+      Promise.resolve(pr).then((res) => {
+        result[index] = res;
+        completed++;
+
+        if (promises.length == completed) {
+          resolve(result);
+        }
+      }).catch = (err) => {
+        reject(err);
+      };
+    });
+  });
+}
+
+// customePromiseAll([pr1, pr2, pr3]).then((res)=>console.log(res))
+
+
+const obj = {
+  name:'lokesh',
+  location:{
+    lat:23,
+    lang:34
+  }
+
+}
+
+let obj2 = {...obj,location:{...obj.location,village:'sunkiya'}};
+
+// console.log(obj);
+
+
+
+const user = {
+  name: "Lokesh",
+  greet() {
+    return () => console.log(this.name);
+  }
+};
+
+user.greet()();
