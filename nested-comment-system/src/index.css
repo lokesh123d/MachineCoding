@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+.btns-container {
+    display: flex;
+    gap: 10px;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.comment-content {
+    font-size: 14px;
+}
+
+.comment-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btn {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    width: 300px;
+}
+
+.comment-textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.post-btn {
+    padding: 5px 10px;
+    background-color: #d6ab1e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.post-btn:hover {
+    background-color: #a67c1e;
+}
