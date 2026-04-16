@@ -774,21 +774,21 @@ function compareTwoOjects(obj, obj2) {
 //   ),
 // );
 
-let pr1 = new Promise((res, rej) => {
-  setTimeout(() => {
-    res("First Promise Resolved");
-  }, 1000);
-});
-let pr2 = new Promise((res, rej) => {
-  setTimeout(() => {
-    res("second Promise Resolved");
-  }, 2000);
-});
-let pr3 = new Promise((res, rej) => {
-  setTimeout(() => {
-    res("Third Promise Resolved");
-  }, 3000);
-});
+// let pr1 = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res("First Promise Resolved");
+//   }, 1000);
+// });
+// let pr2 = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res("second Promise Resolved");
+//   }, 2000);
+// });
+// let pr3 = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res("Third Promise Resolved");
+//   }, 3000);
+// });
 
 function customePromiseAll(promises) {
   return new Promise((resolve, reject) => {
@@ -811,27 +811,88 @@ function customePromiseAll(promises) {
 
 // customePromiseAll([pr1, pr2, pr3]).then((res)=>console.log(res))
 
+// const obj = {
+//   name:'lokesh',
+//   location:{
+//     lat:23,
+//     lang:34
+//   }
 
-const obj = {
-  name:'lokesh',
-  location:{
-    lat:23,
-    lang:34
-  }
+// }
+
+// let obj2 = {...obj,location:{...obj.location,village:'sunkiya'}};
+
+// // console.log(obj);
+
+// const user = {
+//   name: "Lokesh",
+//   greet() {
+//     return () => console.log(this.name);
+//   }
+// };
+
+// user.greet()();
+
+function reversedWord(str) {
+  let newStr = str.split(" ").map((item) => {
+    let transformstr = "";
+    for (let i = item.length - 1; i >= 0; i--) {
+      transformstr += item[i];
+    }
+    return transformstr;
+  });
+
+  return newStr.join(" ");
+}
+
+// console.log(reversedWord('hello world'))
+
+function removeDuplicate2(arr) {
+  // let result = [];
+
+  // for (let i = 0; i < arr.length; i++) {
+  //   if (!result.includes(arr[i])) {
+  //     result.push(arr[i]);
+  //   }
+  // }
+
+  // return result;
+
+ return arr.filter((item, index) => arr.indexOf(item) === index);
+
+
 
 }
 
-let obj2 = {...obj,location:{...obj.location,village:'sunkiya'}};
-
-// console.log(obj);
+// console.log(removeDuplicate2([1, 2, 3, 4, 5, 6, 2, 4, 2]));
 
 
 
-const user = {
-  name: "Lokesh",
-  greet() {
-    return () => console.log(this.name);
-  }
-};
 
-user.greet()();
+function groupAnagram(arr){
+
+  let result = [];
+
+
+let asn = arr.map((item)=>{
+ return result?.map((val)=>{
+    if(val[0].sort().includes(item.sort())){
+      val.push(item);
+    }else{
+      result.push(val);
+    }
+  })
+})
+
+
+console.log(asn);
+
+
+
+}
+
+// console.log(groupAnagram(["eat", "tea", "tan", "ate", "nat", "bat"]))
+
+
+
+
