@@ -858,41 +858,43 @@ function removeDuplicate2(arr) {
 
   // return result;
 
- return arr.filter((item, index) => arr.indexOf(item) === index);
-
-
-
+  return arr.filter((item, index) => arr.indexOf(item) === index);
 }
 
 // console.log(removeDuplicate2([1, 2, 3, 4, 5, 6, 2, 4, 2]));
 
-
-
-
-function groupAnagram(arr){
-
+function groupAnagram(arr) {
   let result = [];
 
+  let asn = arr.map((item) => {
+    return result?.map((val) => {
+      if (val[0].sort().includes(item.sort())) {
+        val.push(item);
+      } else {
+        result.push(val);
+      }
+    });
+  });
 
-let asn = arr.map((item)=>{
- return result?.map((val)=>{
-    if(val[0].sort().includes(item.sort())){
-      val.push(item);
-    }else{
-      result.push(val);
-    }
-  })
-})
-
-
-console.log(asn);
-
-
-
+  console.log(asn);
 }
 
 // console.log(groupAnagram(["eat", "tea", "tan", "ate", "nat", "bat"]))
+function binarySearch(arr, last, first, target) {
+  while (last >= first) {
+    let mid = Math.floor((last + first) / 2);
 
+    if (arr[mid] === target) {
+      return mid;
+    } else if (arr[mid] > target) {
+      last = mid - 1;
+    } else {
+      first = mid + 1;
+    }
+  }
 
+  return -1;
+}
 
-
+let arr = [1, 2, 3, 4, 5, 6, 7, 34, 57, 743];
+console.log(binarySearch(arr, arr.length - 1, 0, 34));
