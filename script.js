@@ -896,5 +896,46 @@ function binarySearch(arr, last, first, target) {
   return -1;
 }
 
-let arr = [1, 2, 3, 4, 5, 6, 7, 34, 57, 743];
-console.log(binarySearch(arr, arr.length - 1, 0, 34));
+// let arr = [1, 2, 3, 4, 5, 6, 7, 34, 57, 743];
+// console.log(binarySearch(arr, arr.length - 1, 0, 34));
+
+// console.log(Boolean([]));
+// console.log(null == undefined);
+// console.log([] + []);
+// console.log({} + []);
+// console.log(!!"false");
+// console.log([1,2] == "1,2");
+// console.log(typeof undefined);
+// console.log(parseInt("10px"));
+// console.log(parseInt("px10"));
+
+function PromiseRetry(pr, retryCount = 3) {
+  if (retryCount > 0) {
+    fetchAgain();
+  } else {
+    throw new Error("While Fetching the api it got rejected");
+  }
+
+  async function fetchAgain() {
+    console.log('char raha hai')
+    try {
+      const result = await pr;
+      return result;
+    } catch (err) {
+      retryCount--;
+
+      PromiseRetry(pr, retryCount);
+    }
+  }
+}
+
+let pr = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (Math.random() * 10 + 1 > 5) {
+      resolve("haha resolve ho gya hai");
+    }
+    reject("he reject kya ho gya hai");
+  }, 3000);
+});
+
+console.log(PromiseRetry(pr, 3));
