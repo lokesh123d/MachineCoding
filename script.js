@@ -909,33 +909,50 @@ function binarySearch(arr, last, first, target) {
 // console.log(parseInt("10px"));
 // console.log(parseInt("px10"));
 
-function PromiseRetry(pr, retryCount = 3) {
-  if (retryCount > 0) {
-    fetchAgain();
-  } else {
-    throw new Error("While Fetching the api it got rejected");
-  }
 
-  async function fetchAgain() {
-    console.log('char raha hai')
-    try {
-      const result = await pr;
-      return result;
-    } catch (err) {
-      retryCount--;
 
-      PromiseRetry(pr, retryCount);
-    }
-  }
-}
 
-let pr = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    if (Math.random() * 10 + 1 > 5) {
-      resolve("haha resolve ho gya hai");
-    }
-    reject("he reject kya ho gya hai");
-  }, 3000);
-});
+// function PromiseRetry(pr, retryCount = 3) {
+//   if (retryCount > 0) {
+//     fetchAgain();
+//   } else {
+//     throw new Error("While Fetching the api it got rejected");
+//   }
 
-console.log(PromiseRetry(pr, 3));
+//   async function fetchAgain() {
+//     console.log('char raha hai')
+//     try {
+//       const result = await pr;
+//       return result;
+//     } catch (err) {
+//       retryCount--;
+
+//       PromiseRetry(pr, retryCount);
+//     }
+//   }
+// }
+
+// let pr = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (Math.random() * 10 + 1 > 5) {
+//       resolve("haha resolve ho gya hai");
+//     }
+//     reject("he reject kya ho gya hai");
+//   }, 3000);
+// });
+
+
+
+// console.log(PromiseRetry(pr, 3));
+
+
+
+
+// const obj = { a: 1 };
+// Object.freeze(obj);
+// obj.a = 2;
+// console.log(obj.a);
+
+
+// console.log(typeof NaN === "number");
+
