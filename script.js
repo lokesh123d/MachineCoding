@@ -956,3 +956,46 @@ function binarySearch(arr, last, first, target) {
 
 // console.log(typeof NaN === "number");
 
+
+
+// const privateFunc =((lifeLine)=>{
+
+// console.log(`Initial LifeLine ${lifeLine}`)
+// return ()=>{
+// lifeLine--;
+// if(lifeLine<=0){
+//   console.log('Life Line is Not Engough')
+// }
+// else{
+//   console.log(`Remain life line ${lifeLine}`)
+// }
+// }
+// })(3);
+
+// privateFunc()
+// privateFunc()
+// privateFunc()
+
+
+
+
+const closureFunc = (()=>{
+const arr = [1,2,3,4,5];
+
+return { 
+  addData:(val)=>{
+    arr.push(val);
+    console.log(arr);
+  },
+  removeData:()=>{
+  arr.pop();
+  console.log(arr)  
+  }
+}
+
+
+})()
+
+
+closureFunc.addData(10);
+closureFunc.removeData();
