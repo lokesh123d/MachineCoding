@@ -1002,6 +1002,12 @@ function binarySearch(arr, last, first, target) {
 
 
 
-const arr = [1,2,3];
-const arr1 = [3,5,7,4];
-console.log(Array.form());
+// const arr = [1,2,3];
+// const arr1 = [3,5,7,4];
+// console.log(Array.form());
+
+
+
+const myCurry  = (ing1)=> ing3=>ing4=> `${ing1}, ${ing3} , ${ing4}`;
+
+console.log(myCurry('patto')('tmmo')('i ont no'))
