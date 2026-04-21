@@ -979,23 +979,29 @@ function binarySearch(arr, last, first, target) {
 
 
 
-const closureFunc = (()=>{
-const arr = [1,2,3,4,5];
+// const closureFunc = (()=>{
+// const arr = [1,2,3,4,5];
 
-return { 
-  addData:(val)=>{
-    arr.push(val);
-    console.log(arr);
-  },
-  removeData:()=>{
-  arr.pop();
-  console.log(arr)  
-  }
-}
-
-
-})()
+// return { 
+//   addData:(val)=>{
+//     arr.push(val);
+//     console.log(arr);
+//   },
+//   removeData:()=>{
+//   arr.pop();
+//   console.log(arr)  
+//   }
+// }
 
 
-closureFunc.addData(10);
-closureFunc.removeData();
+// })()
+
+
+// closureFunc.addData(10);
+// closureFunc.removeData();
+
+
+
+const arr = [1,2,3];
+const arr1 = [3,5,7,4];
+console.log(Array.form());
