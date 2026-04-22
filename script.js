@@ -1008,6 +1008,14 @@ function binarySearch(arr, last, first, target) {
 
 
 
-const myCurry  = (ing1)=> ing3=>ing4=> `${ing1}, ${ing3} , ${ing4}`;
+// const myCurry  = (ing1)=> ing3=>ing4=> `${ing1}, ${ing3} , ${ing4}`;
 
-console.log(myCurry('patto')('tmmo')('i ont no'))
+// console.log(myCurry('patto')('tmmo')('i ont no'))
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+.grid-row{
+  display:flex;
+
+}
+.grid-col{
+  width:40px;
+  height:40px;
+  border:1px solid black;
+}
+.active{
+  background-color:green;
+}
+
