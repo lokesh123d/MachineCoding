@@ -909,9 +909,6 @@ function binarySearch(arr, last, first, target) {
 // console.log(parseInt("10px"));
 // console.log(parseInt("px10"));
 
-
-
-
 // function PromiseRetry(pr, retryCount = 3) {
 //   if (retryCount > 0) {
 //     fetchAgain();
@@ -941,22 +938,14 @@ function binarySearch(arr, last, first, target) {
 //   }, 3000);
 // });
 
-
-
 // console.log(PromiseRetry(pr, 3));
-
-
-
 
 // const obj = { a: 1 };
 // Object.freeze(obj);
 // obj.a = 2;
 // console.log(obj.a);
 
-
 // console.log(typeof NaN === "number");
-
-
 
 // const privateFunc =((lifeLine)=>{
 
@@ -976,46 +965,96 @@ function binarySearch(arr, last, first, target) {
 // privateFunc()
 // privateFunc()
 
-
-
-
 // const closureFunc = (()=>{
 // const arr = [1,2,3,4,5];
 
-// return { 
+// return {
 //   addData:(val)=>{
 //     arr.push(val);
 //     console.log(arr);
 //   },
 //   removeData:()=>{
 //   arr.pop();
-//   console.log(arr)  
+//   console.log(arr)
 //   }
 // }
 
-
 // })()
-
 
 // closureFunc.addData(10);
 // closureFunc.removeData();
-
-
 
 // const arr = [1,2,3];
 // const arr1 = [3,5,7,4];
 // console.log(Array.form());
 
-
-
 // const myCurry  = (ing1)=> ing3=>ing4=> `${ing1}, ${ing3} , ${ing4}`;
 
 // console.log(myCurry('patto')('tmmo')('i ont no'))
 
+// const hellojs = (key, value) => {
+//   const data = localStorage.setitem("key", value);
+//   const data2 = localSotar.getitem(key);
+
+//   return data2;
+// };
+
+// const useLocalStaroge(key,initialValue)=>{
+// const [value,setValue] = setState(()=>{
+//  const storedValue =  localStorage.getItem(key);
+//  if(!storedValue){
+//   localStorage.setitem(key,JSON.stringfy(initialValue));
+//   return initialValue;
+//  }
+//  return storedValue ;
+// })
+
+// useEffect(()=>{
+//   localStorage.setitem(key,JSON.stringfy(value));
+//  const storedValue =  localStorage.getItem(key);
+
+// setValue(storedValue );
+
+// },[value,setValue])
+
+// return [value,setValue]
+
+// }
+
+// const useDebounce = (func, delay) => {
+// const timerRef = useRef (null);
+
+
+//   return (...args) => {
+// if(timerRef.current) clearTimeout(timerRef.currrent);
+
+// timerRef.current = setTimeout(() => {
+//       func(...args);
+//     }, delay);
+//   };
+// };
 
 
 
+// function sum(a){
+// return function (b){
+//   if(b ==undefined) return a;
+//    return sum(a+b);
+// }
+// }
 
+
+// const sum = (a)=> 
+
+// console.log(sum(1)(2)());
+
+
+
+function jn(b,...c){
+console.log(c);
+}
+
+jn(3,45,7,8,5,7,7)
 
 
 
