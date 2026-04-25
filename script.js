@@ -1153,21 +1153,184 @@ function binarySearch(arr, last, first, target) {
 //  console.log(subarraywithmaximumsum(arr))
 
 
-function maxSubarraySum(arr) {
-    let res = arr[0];
+// function maxSubarraySum(arr) {
+//     let res = arr[0];
   
 
-    for (let i = 0; i < arr.length; i++) {
-        let currSum = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         let currSum = 0;
       
 
-        for (let j = i; j < arr.length; j++) {
-            currSum = currSum + arr[j]
-            res = Math.max(res, currSum);
-        }
-    }
-    return res;
-}
+//         for (let j = i; j < arr.length; j++) {
+//             currSum = currSum + arr[j]
+//             res = Math.max(res, currSum);
+//         }
+//     }
+//     return res;
+// }
 
-const arr = [2, 3, -8, 7, -1, 2, 3];
-console.log(maxSubarraySum(arr));
+// const arr = [2, 3, -8, 7, -1, 2, 3];
+// console.log(maxSubarraySum(arr));
+
+
+
+
+
+// function (){
+
+// }
+
+
+
+// var x = 1;
+// x = (x, x++);
+// console.log(x);
+
+
+// console.log(arr.sort());
+
+
+// let arr = [10,5,2]
+// console.log(arr.reduce((acc,val,inde)=>{
+// return acc*=val;
+// },1))
+
+// console.log(arr.reduce((acc,val,inde)=>{
+// (val in acc)? acc[val] +=1 :acc[val] =1;
+// return acc;
+// },{}))
+
+
+// console.log({}+{}); 
+
+
+// console.log(+!+[] === 1)
+// console.log(typeof +!+[])
+
+// if([]){
+//   console.log('js')
+// }
+
+// console.log(![] + [] === 'false')
+// console.log(typeof (![] + []))
+
+
+// const obj = {};
+
+// obj[{}] = "first";
+// obj[{}] = "second";
+// obj[{}] = "second2";
+// obj[{nme:'jf'}] = "second2";
+
+// console.log(obj);
+
+
+
+
+// function update(obj) {
+//   obj.value = 20;
+//   obj = { value: 30 };
+// }
+
+// const item = { value: 10 };
+
+// update(item);
+
+// console.log(item.value);
+
+
+
+// function change(user) {
+//   user.name = "Rahul";
+//   user = { name: "Amit" };
+//   return user;
+// }
+
+// const person = { name: "Lokesh" };
+
+// const result = change(person);
+
+// console.log(person.name);
+// console.log(result.name);
+
+
+
+// const obj = {};
+
+// console.log(obj.toString === Object.prototype.toString);
+
+
+// const arr = [1, , 3];
+
+// console.log(arr.length);
+// console.log(arr[1]);
+
+
+
+// Promise.resolve(1)
+//   .then(x => x + 1)
+//   .then(x => {
+//   return 30
+//   })
+//   .catch(() => 10)
+//   .then(x => console.log(x));
+
+
+//   const str = "hello";
+
+// str.test = 123;
+
+// console.log(str.__proto__);
+
+
+
+
+// const arr = new Array(3).fill({});
+
+// arr[0].name = "Lokesh";
+
+// console.log(arr);
+
+// let x = 10;
+
+// function test(x = 20) {
+//   console.log(x);
+// }
+
+// test(undefined);
+// test(5);
+
+
+// console.log(NaN === NaN);
+// console.log(Object.is(NaN, NaN));
+
+
+
+// let a = { n: 1 };
+// let b = a;
+
+// a.x = a = { n: 2 };
+
+// console.log(a.x);
+// console.log(b.x);
+
+
+// let a = b = 30 ;
+// console.log(b);
+
+
+// if(' ') console.log('jkdh');
+// console.log('  '==false);
+
+
+// function abc(){
+//   return {
+//     a:2
+//   }
+// }
+// console.log(abc())
+
+
+// const arr = [1,2,3,5];
+// arr[7]=10;
+// console.log(arr.length)
