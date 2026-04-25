@@ -1024,7 +1024,6 @@ function binarySearch(arr, last, first, target) {
 // const useDebounce = (func, delay) => {
 // const timerRef = useRef (null);
 
-
 //   return (...args) => {
 // if(timerRef.current) clearTimeout(timerRef.currrent);
 
@@ -1034,8 +1033,6 @@ function binarySearch(arr, last, first, target) {
 //   };
 // };
 
-
-
 // function sum(a){
 // return function (b){
 //   if(b ==undefined) return a;
@@ -1043,18 +1040,134 @@ function binarySearch(arr, last, first, target) {
 // }
 // }
 
-
-// const sum = (a)=> 
+// const sum = (a)=>
 
 // console.log(sum(1)(2)());
 
+// function jn(b,...c){
+// console.log(c);
+// }
+
+// jn(3,45,7,8,5,7,7)
 
 
-function jn(b,...c){
-console.log(c);
+
+
+// const arr = [4, 5, 1, 2, 1, 2, 4];
+
+// function nonRepeatingChar(arr) {
+  //   for (let i = 0; i < arr.length; i++) {
+    //     let count = 0;
+    //     for (let j = 0; j < arr.length; j++) {
+      //       if (arr[i] == arr[j]) {
+        //         count++;
+        //       }
+//     }
+//     if (count == 1) return arr[i];
+//   }
+// }
+// console.log(nonRepeatingChar(arr));
+
+
+// const arr = [4, 5, 1, 2, 1, 2, 4];
+
+// function firtrepeatingNum(arr){
+  
+//   for(let i = 0;i<arr.length;i++){
+  //     let count = 0;
+  //     for(let j = 0;j<arr.length;j++){
+    //       if(arr[i]==arr[j]){
+      // count++;
+      //       }
+      //     }
+      //     if(count ==2){
+        //       return arr[i]
+        //     }
+        //   }
+        //   return null
+        
+        // }
+        
+// console.log(firtrepeatingNum(arr));
+
+
+
+// const arr = [4, 5, 1, 2, 1, 2, 4];
+
+// function arget (arr){
+  //   let large = arr[0];
+  //   for(let i = 0;i<arr.length;i++){
+    // if(arr[i]>large) large = arr[i]
+    //   }
+    //   console.log(large);
+    // }
+    
+    // arget(arr)
+    
+//     const arr = [4, 5, 1, 2, 1, 2, 4];
+    
+    
+//     function removeDupicateFrom(arr){
+//       let reult = [];
+//       for(let i =0;i<arr.length;i++){
+//         for(let j = i+1;j<arr.length;j++){
+//           if(arr[i]==arr[j]){
+//             arr.splice(j,1)
+//           }
+//         }
+//       }
+//         console.log(arr);
+// }
+
+// removeDupicateFrom(arr)
+
+
+//  const arr = [4, 5, 1, 2, 1, 2, 4];
+// function minandma(arr){
+//   let large = arr[0];
+//   let min = arr[0];
+//   for(let i = 0;i<arr.length;i++){
+//     if(arr[i]>large){
+//       large =arr[i];
+//     }
+//     if(arr[i]<min) min = arr[i]
+//   }
+// console.log(large,min);}
+
+
+// console.log(minandma(arr));
+
+
+//  const arr = [4, 5, 1, 2, 1, 2, 4];
+//  function subarraywithmaximumsum(arr){
+// let longet = [];
+
+// for(let i =0;i<arr.length;i++){
+//   let current = [];
+//   for(let j = i+1;j<arr.length;j++){
+     
+//   }
+// }
+
+//  }
+//  console.log(subarraywithmaximumsum(arr))
+
+
+function maxSubarraySum(arr) {
+    let res = arr[0];
+  
+
+    for (let i = 0; i < arr.length; i++) {
+        let currSum = 0;
+      
+
+        for (let j = i; j < arr.length; j++) {
+            currSum = currSum + arr[j]
+            res = Math.max(res, currSum);
+        }
+    }
+    return res;
 }
 
-jn(3,45,7,8,5,7,7)
-
-
-
+const arr = [2, 3, -8, 7, -1, 2, 3];
+console.log(maxSubarraySum(arr));
