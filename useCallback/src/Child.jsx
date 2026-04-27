@@ -1,12 +1,11 @@
 import React,{memo} from 'react'
 
 const Child = ({func}) => {
-    console.log('child re reder')
+  func()
+  console.log('child got re render')
   return (
-    <div>
-        <button onClick={func}>func run kar la bhai</button>
-    </div>
+    <div>Child</div>
   )
 }
 
-export default memo(Child)
+export default  memo(Child)

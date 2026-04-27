@@ -1334,3 +1334,15 @@ function binarySearch(arr, last, first, target) {
 // const arr = [1,2,3,5];
 // arr[7]=10;
 // console.log(arr.length)
+
+
+
+// console.log({} + []);
+
+// function hello(){
+
+// }
+
+// console.log(typeof hello)
+
+console.log(typeof typeof 'ldkfj'+34)

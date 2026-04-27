@@ -1,33 +1,31 @@
-import { useCallback, useState } from 'react'
-import Child from './Child'
-
-
+import React, { useCallback, useState } from "react";
+import Child from "./Child";
 const App = () => {
-  const [count, setcount] = useState(0)
-  const [count2, setcount2] = useState(0)
-
- const js = useCallback(() => {
-    console.log('js');
-  }, [count])
-
-console.log('component got rerender')
+  const [count, setcount] = useState(0);
+// console.log('parent got rerender');
 
 
 
-const childFunc=useCallback(()=>{
- console.log('child function');
-},[count])
+function yachalaga(){
+  console.log('hehe')
+}
 
+const handleClick = useCallback(()=>{
+    console.log('handle click chala hai');
+
+},[])
 
   return (
     <div>
-      <button onClick={() => setcount((prev) => prev + 1)}>Click me</button>
-      <button onClick={() => setcount2((prev) => prev + 1)}>Click me2</button>
-      <button onClick={() => js()}>run function </button>
-   <Child func={childFunc}/>
-     
+      <button onClick={(prev) => setcount(prev + 1)}>click here</button>
+      <Child  func={handleClick}/>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
+
+// what is ues callback
+// why we use this
+// where we ues
+// ho e ue
